@@ -26,8 +26,7 @@ public class SplitString {
         for(int i=0; i<array.length; i++) {
             System.out.println(array[i]);
         }
-        //Enhanced loop
-
+                         //Enhanced loop
         for(String arr3:array){
             System.out.print(arr3);
         }

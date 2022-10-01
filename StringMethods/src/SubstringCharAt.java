@@ -1,9 +1,10 @@
-import java.util.Arrays;
+
+import java.util.Scanner;
 
 public class SubstringCharAt {
     public static void main(String[] args) {
 
-        //Substring vs charAt vs IndexOf
+        //Substring prints out elements based on what index they're on. Split sentences etc.
 
         String str="Today is Sunday";
         //String str2=new String("Today is Sunday");
@@ -40,6 +41,17 @@ String string="Good morning";
 
                             //wrong syntax
         //newString.charAt(0).substring(6) -its looking for a substring method in a char which doesnt exist.Cant store chars in a string data type.
+        System.out.println("-----------------------------------------------------------------------------");
+
+        //Scanner and Substring to print first 3 letters of an input
+
+
+                Scanner answer=new Scanner(System.in);
+                System.out.println("Whats your favorite movie");
+                String movie=answer.nextLine();
+                String letters=movie.substring(0,3);
+                System.out.println("The first three letters of "+movie+ " is "+letters);
+            }
 
     }
-}
+
